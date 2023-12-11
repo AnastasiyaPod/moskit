@@ -30,17 +30,4 @@ public class MovieManager {
         }
         return ans;
     }
-    public String[] MaxFindLast() {
-        int resultLength;
-        if (movies.length > limit) {
-            resultLength = movies.length;
-        } else {
-            resultLength = limit;
-        }
-        String[] ans = new String[resultLength];
-        for (int i = 0; i < ans.length; i++) {
-            ans[i] = movies[movies.length - 1 - i];
-        }
-        return ans;
-    }
 }

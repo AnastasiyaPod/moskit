@@ -84,8 +84,8 @@ public class MovieManagerTest {
         manager.addMovie("Тролли");
         manager.addMovie("Номер один");
         manager.addMovie("Отель");
-        String[] expected = {"Отель", "Номер один", "Тролли", "Человек-неведимка", "Джентльмены", "Вперед", "Бладшот"};
-        String[] actual = manager.MaxFindLast();
+        String[] expected = {"Отель", "Номер один", "Тролли", "Человек-неведимка", "Джентльмены"};
+        String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
 }
